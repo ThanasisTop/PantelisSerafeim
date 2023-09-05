@@ -56,6 +56,22 @@
         $('#videoModal').on('hide.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc);
         })
+		//stop video on modal close
+		// $("#videoModal").on('hidden.bs.modal', function (e) {
+			// $("#videoModaliframe").attr("src", $("#videoModaliframe").attr("src"));
+		// });
+		
+		$("#galleryVideoModal1").on('hidden.bs.modal', function (e) {
+			$("#galleryVideoModal1iframe").attr("src", $("#galleryVideoModal1iframe").attr("src"));
+		});
+		
+		$("#galleryVideoModal2").on('hidden.bs.modal', function (e) {
+			$("#galleryVideoModal2iframe").attr("src", $("#galleryVideoModal2iframe").attr("src"));
+		});
+		
+		$("#galleryVideoModal3").on('hidden.bs.modal', function (e) {
+			$("#galleryVideoModal3iframe").attr("src", $("#galleryVideoModal3iframe").attr("src"));
+		});
     });
 
 
